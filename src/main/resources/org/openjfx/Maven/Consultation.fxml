@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1000.0" style="-fx-background-color: 383E56;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.Maven.ConsultationController">
+   <children>
+      <Pane prefHeight="88.0" prefWidth="1000.0" stylesheets="@../../Style/MainStyle.css">
+         <children>
+            <Button fx:id="ProfilID" layoutX="935.0" layoutY="16.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="59.0" styleClass="transparent" stylesheets="@../../../Style/MainStyle.css" />
+            <Button layoutX="-8.0" layoutY="-7.0" mnemonicParsing="false" onAction="#back" prefHeight="75.0" prefWidth="92.0" styleClass="transparent" stylesheets="@../../Style/MainStyle.css">
+               <graphic>
+                  <ImageView fitHeight="93.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/336721789_916246296322521_3193178127915645001_n-removebg-preview.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic></Button>
+            <TextField fx:id="rechercheTitre" layoutX="347.0" layoutY="44.0" prefHeight="34.0" prefWidth="166.0" promptText="Type Title" styleClass="transparent" stylesheets="@../../Style/MainStyle.css">
+               <font>
+                  <Font name="Cooper Black" size="18.0" />
+               </font>
+            </TextField>
+            <Line endX="100.0" layoutX="439.0" layoutY="76.0" startX="-100.0" />
+            <ImageView fitHeight="34.0" fitWidth="37.0" layoutX="503.0" layoutY="45.0" onMouseClicked="#search" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/recherche-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="left" />
+            <String fx:value="side_ankerpane" />
+         </styleClass>
+      </Pane>
+      <TableView fx:id="tablecom" layoutX="14.0" layoutY="369.0" prefHeight="406.0" prefWidth="666.0" stylesheets="@../../Style/MainStyle.css">
+         <columns>
+            <TableColumn fx:id="saisoncom" minWidth="0.0" prefWidth="75.20001220703125" text="Num Saison " />
+            <TableColumn fx:id="episodecom" minWidth="0.0" prefWidth="90.39996337890625" text="Num Episode" />
+            <TableColumn fx:id="com" minWidth="0.0" prefWidth="592.7999572753906" text="Comments" />
+         </columns>
+         <styleClass>
+            <String fx:value="transparent" />
+            <String fx:value="side_ankerpane" />
+         </styleClass>
+      </TableView>
+      <HBox fx:id="Hbox" layoutX="25.0" layoutY="96.0" prefHeight="254.0" prefWidth="182.0" stylesheets="@../../Style/MainStyle.css" />
+      <TableView fx:id="tablenote" layoutX="699.0" layoutY="88.0" prefHeight="686.0" prefWidth="299.0" stylesheets="@../../Style/MainStyle.css">
+         <columns>
+            <TableColumn fx:id="saisonnote" minWidth="0.0" prefWidth="101.60003662109375" text="Num Saison " />
+            <TableColumn fx:id="episodenote" minWidth="0.0" prefWidth="102.39990234375" text="Num Episode" />
+            <TableColumn fx:id="note" minWidth="0.0" prefWidth="95.2000732421875" text="note" />
+         </columns>
+         <styleClass>
+            <String fx:value="transparent" />
+            <String fx:value="side_ankerpane" />
+         </styleClass>
+      </TableView>
+      <Label fx:id="scoreSaison" layoutX="268.0" layoutY="173.0" prefHeight="36.0" prefWidth="182.0">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="266.0" layoutY="220.0" prefHeight="34.0" prefWidth="142.0" styleClass="side_ankerpane" stylesheets="@../../Style/MainStyle.css" text="            Show" textFill="#2c037e">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="score" layoutX="268.0" layoutY="255.0" prefHeight="26.0" prefWidth="118.0">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="Choicebox" layoutX="262.0" layoutY="143.0" prefWidth="150.0" stylesheets="@../../Style/MainStyle.css">
+         <styleClass>
+            <String fx:value="transparent" />
+            <String fx:value="side_ankerpane" />
+         </styleClass>
+      </ChoiceBox>
+      <Label layoutX="307.0" layoutY="145.0" prefHeight="26.0" prefWidth="59.0" text=" Saison" textFill="#2c037e">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="266.0" layoutY="96.0" prefHeight="34.0" prefWidth="142.0" stylesheets="@../../Style/MainStyle.css" text="Score " textFill="#2c037e">
+         <font>
+            <Font name="Cooper Black" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

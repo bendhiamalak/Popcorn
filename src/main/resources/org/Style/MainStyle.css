@@ -1,0 +1,78 @@
+.left{
+	-fx-background-color:#EEDAD1;
+
+}
+.transparent{
+	-fx-background-color:rgba(0,0,0,0);
+}
+.border{
+	-fx-border-color:#F69E7B;
+	-fx-border-width:2; 
+}
+ .right{
+	-fx-border-color:#F69E7B;
+	-fx-border-width:0 2 0 0; 
+}
+.right1{
+	-fx-background-color:#D4B5B0;
+}
+.background{
+	-fx-background-color:#d4b5b0;
+}
+.left-side-background{
+	-fx-background-color:#d4b5b0;
+}
+
+.right-side-background{
+	-fx-background-color:#eedad1;
+}
+
+
+.button-background{
+-fx-background-color:#d4b5b0;     
+}
+.border{
+
+-fx-border-color:#d4b5b0;
+
+-fx-border-width:2;
+
+}
+
+
+.Erreur{
+	-fx-color:#ef0808;
+}
+
+.side_ankerpane{
+	-fx-background-color:383E56;
+	-fx-border-color:383E56;
+	-fx-border-width:2px 2px 2px 2px ;
+	-fx-border-radius:20px;
+	-fx-background-radius:20px;
+	-fx-border-style:solid;
+	
+	
+	}
+	.side_recherche__ankerpane{
+	-fx-background-color:#EEDAD1;
+	-fx-border-color:#EEDAD1;
+	-fx-border-width:2px 2px 2px 2px ;
+	-fx-border-radius:20px;
+	-fx-background-radius:20px;
+	-fx-border-style:solid;
+	
+	
+	}
+
+
+.Consultation{
+	-fx-background-color:#F69E7B
+}
+
+
+.listview{
+	-fx-font-size: 20px;
+	 -fx-font-family:calisto MT;
+}
+
